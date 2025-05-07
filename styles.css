@@ -1,0 +1,52 @@
+body {
+    transition: background-color 0.5s, color 0.5s;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .light-theme {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .dark-theme {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #0a6c5e;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* CSS Animation for image */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  #animImage {
+    width: 150px;
+    margin-top: 30px;
+    transition: transform 0.5s;
+  }
+  
+  .bounce {
+    animation: bounce 0.8s ease-in-out;
+  }
+  
